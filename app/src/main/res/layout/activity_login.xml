@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Greyscale"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
     tools:context=".Login">
 
     <TextView
@@ -12,19 +15,31 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:padding="10dp"
+        android:layout_gravity="center_horizontal"
         android:text="SpringDroid"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"
+        android:gravity="center_horizontal"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTintMode="multiply"
+        android:src="@drawable/portfolio">
+
+    </ImageView>
 
     <TextView
         android:id="@+id/tvSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="USER LOGIN"
+        android:layout_gravity="center_horizontal"
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -37,6 +52,7 @@
         android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="Username"
@@ -64,7 +80,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@color/blue"
         android:text="LOGIN"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -79,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:gravity="center"
+        android:layout_gravity="center_horizontal"
         android:text="New user?\nClick here to register"
         android:textColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,4 +103,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
